@@ -1,0 +1,9 @@
+.support {
+  padding-top: 310px;
+  color: #6e6e6e;
+}
+.support span {
+  color: #6e6e6e;
+  text-decoration: none;
+  border-bottom: 1px dashed;
+}

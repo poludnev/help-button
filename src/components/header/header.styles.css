@@ -1,0 +1,13 @@
+h1 {
+  font-size: 45px;
+  /* font-family: MUSEOSANSCYRL_900; */
+  text-transform: uppercase;
+  width: 604px;
+  padding-bottom: 6px;
+  color: #6e6e6e;
+  background: url(./shadow.png) no-repeat left bottom;
+  position: absolute;
+  top: 12%;
+  left: 50%;
+  margin-left: -302px;
+}

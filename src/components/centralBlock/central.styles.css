@@ -1,0 +1,26 @@
+.block {
+  position: absolute;
+  max-width: 444px;
+  width: 86%;
+  left: 50%;
+  top: 28%;
+  margin-left: -222px;
+}
+
+.transition {
+  -moz-transition: all 0.25s;
+  -o-transition: all 0.25s;
+  -khtml-transition: all 0.25s;
+  -webkit-transition: all 0.25s;
+  -ms-transition: all 0.25s;
+  transition: all 0.25s;
+}
+
+@media only screen and (max-height: 750px) {
+  .block {
+    height: none;
+    position: relative;
+    left: 0;
+    margin: 0 auto;
+  }
+}
