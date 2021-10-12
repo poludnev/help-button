@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/help-button/static/css/main.a617e044.chunk.css",
+    "main.js": "/help-button/static/js/main.e74639b7.chunk.js",
+    "main.js.map": "/help-button/static/js/main.e74639b7.chunk.js.map",
+    "runtime-main.js": "/help-button/static/js/runtime-main.0734f7ea.js",
+    "runtime-main.js.map": "/help-button/static/js/runtime-main.0734f7ea.js.map",
+    "static/js/2.db349328.chunk.js": "/help-button/static/js/2.db349328.chunk.js",
+    "static/js/2.db349328.chunk.js.map": "/help-button/static/js/2.db349328.chunk.js.map",
+    "static/js/3.acaf9ce1.chunk.js": "/help-button/static/js/3.acaf9ce1.chunk.js",
+    "static/js/3.acaf9ce1.chunk.js.map": "/help-button/static/js/3.acaf9ce1.chunk.js.map",
+    "index.html": "/help-button/index.html",
+    "static/css/main.a617e044.chunk.css.map": "/help-button/static/css/main.a617e044.chunk.css.map",
+    "static/js/2.db349328.chunk.js.LICENSE.txt": "/help-button/static/js/2.db349328.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/help-button/static/media/logo.6ce24c58.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0734f7ea.js",
+    "static/js/2.db349328.chunk.js",
+    "static/css/main.a617e044.chunk.css",
+    "static/js/main.e74639b7.chunk.js"
+  ]
+}
