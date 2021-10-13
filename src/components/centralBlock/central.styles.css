@@ -16,6 +16,14 @@
   transition: all 0.25s;
 }
 
+@media only screen and (max-width: 680px) {
+  .block {
+    position: relative;
+    left: 0;
+    margin: 0 auto;
+  }
+}
+
 @media only screen and (max-height: 750px) {
   .block {
     height: none;

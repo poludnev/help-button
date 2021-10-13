@@ -1,13 +1,60 @@
-h1 {
+:root {
+  --header-width: 610px;
+}
+
+.header {
+  position: absolute;
+  top: 18%;
+  left: 50%;
+  margin-left: calc(-1 * var(--header-width) * 0.5);
+}
+
+.header h1 {
   font-size: 45px;
-  /* font-family: MUSEOSANSCYRL_900; */
   text-transform: uppercase;
-  width: 604px;
+  width: var(--header-width);
+  margin: 0;
   padding-bottom: 6px;
   color: #6e6e6e;
-  background: url(./shadow.png) no-repeat left bottom;
-  position: absolute;
-  top: 12%;
-  left: 50%;
-  margin-left: -302px;
+  background: url(./img/shadow.png) no-repeat left bottom;
+}
+
+.header p {
+  margin: 0;
+  font-family: 'Nunito', sans-serif;
+}
+
+@media only screen and (max-width: 680px) {
+  .header {
+    width: auto;
+    position: relative;
+    margin-left: 0;
+    left: 0;
+  }
+  .header h1 {
+    font-size: 45px;
+    width: auto;
+    background: none;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .header h1 {
+    font-size: 40px;
+  }
+}
+
+@media only screen and (max-height: 750px) {
+  .header {
+    width: auto;
+    position: relative;
+    margin-left: 0;
+    left: 0;
+  }
+  .header h1 {
+    font-size: 45px;
+    width: auto;
+    padding-bottom: 0px;
+    background: none;
+  }
 }

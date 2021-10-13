@@ -1,0 +1,24 @@
+{
+  "langBarTitle": "choose your langguage",
+  "title": { "part1": "stuck", "part2": " with your task?" },
+  "description": "We'll help you, press button!",
+  "helpButton": "sos!",
+  "supportBarTitle": "get help from",
+  "supportTeamName": "support team",
+  "companyName": "companyname",
+  "year": "2021",
+  "form": {
+    "backButton": "get back",
+    "submitButton": "send it!",
+    "nameInput": "name",
+    "emailInput": "email or other contact",
+    "textArea": "what is your problem?"
+  },
+  "popup": {
+    "sent": { "title": "message sent", "body": "we will contact you soon" },
+    "support": {
+      "title": "Hello, my friend!",
+      "body": "<p>If you have problems of any kind, please feel free to contact us anytime. We will do our best to give you some great advice.</p><p>We will ask some of our friends or other people for support if it is too hard for us to help you. Please, leave us a message with your problem and contact details, then we will respond to you as soon as possible.</p><p>If you want to stay anonymous, just put 'anon' into the contact field, and you'll be able to check the feedback in our blog (it is still in process, the link will be available in a while).</p>"
+    }
+  }
+}

@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Viga&display=swap');
 body {
   /* margin: 0; */
   height: 100%;
   background-image: url('./bg.jpg');
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Viga', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

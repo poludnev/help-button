@@ -1,19 +1,38 @@
+:root {
+  --langbar-width: 180px;
+}
+
 .bl_lang {
   position: absolute;
-  top: 3%;
-  width: 160px;
+  top: 1%;
+  width: var(--langbar-width);
   left: 50%;
-  margin-left: -80px;
+  margin-left: calc(-1 * var(--langbar-width) * 0.5);
 }
 
 .lang {
-  padding-bottom: 12px;
+  padding-bottom: 10px;
   color: #b2b2b2;
 }
-.country a {
+
+.country span {
   margin: 5px;
 }
 .inactive {
   opacity: 0.14;
   filter: alpha(opacity=14);
+}
+
+@media only screen and (max-width: 680px) {
+  .bl_lang {
+    position: relative;
+    margin-top: 24px;
+  }
+}
+
+@media only screen and (max-height: 750px) {
+  .bl_lang {
+    position: relative;
+    margin-top: 24px;
+  }
 }

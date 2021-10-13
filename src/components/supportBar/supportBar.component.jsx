@@ -1,10 +1,17 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import './supportBar.styles.css';
 
-const SupportBar = () => {
+const SupportBar = (props) => {
+  const { style, onClick } = props;
+  const { t } = useTranslation();
+
   return (
-    <div class='support animated'>
-      Get help from <span class='btn'>support team</span>
+    <div className='support animated' style={style}>
+      {t('supportBarTitle')}{' '}
+      <span className='btn' name='support' onClick={onClick('support')}>
+        {t('supportTeamName')}
+      </span>
     </div>
   );
 };

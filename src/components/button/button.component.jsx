@@ -1,11 +1,16 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import './button.styles.css';
+import classNames from 'classnames';
 
-const Button = () => {
+const Button = ({ style: { display }, onClick }) => {
+  const { t } = useTranslation();
+  const classes = classNames('bt animated', display === 'none' ? 'zoomOut' : 'zoomIn');
+
   return (
-    <div className='bt animated'>
+    <div className={classes} onClick={onClick}>
       <div className='bt-fon'></div>
-      <div className='btn-help btn'>help?</div>
+      <div className='btn-help btn'>{t('helpButton')}</div>
     </div>
   );
 };
