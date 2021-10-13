@@ -1,9 +1,9 @@
 {
   "langBarTitle": "выберите язык",
   "title": { "part1": "не знаешь,", "part2": " что делать?" },
-  "description": "мы пожскажем, жми кнопку!",
+  "description": "мы подскажем, жми кнопку!",
   "helpButton": "sos!",
-  "supportBarTitle": "получите помощь от",
+  "supportBarTitle": "получи помощь от",
   "supportTeamName": "команды поддержки",
   "companyName": "companyname",
   "year": "2021",
