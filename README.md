@@ -4,9 +4,9 @@ just for fun 'help button'
 
 The app is made based on react-creat-app, internationalised with i18next library.
 
-On Oct 12, 2021, is waiting for the form validator to be added, it is supposed to be the yup.
+Oct 18, 2021: add sending from process, currently for localhost.
 
-After the validator to be attached, the next step is to complete the form data sending code.
+Next step is to add form validator, it is supposed to be the yup.
 
 ## What's the idea?
 
