@@ -28,14 +28,11 @@ class App extends React.Component {
         supportbar: {
           show: true,
         },
-        showPopup: false,
-        popupType: 'support',
       },
     };
   }
 
   toggleFormHandler = () => {
-    console.log('form toggled');
     this.setState({
       ...this.state,
       uiState: {
@@ -47,13 +44,7 @@ class App extends React.Component {
     });
   };
 
-  sendFormData = () => {
-    console.log('form data is sending');
-  };
-
-  submitFormHandler = () => {
-    console.log('form submitted');
-    this.sendFormData();
+  submitFormHandler = (formData) => {
     this.setState({
       ...this.state,
       uiState: {
@@ -63,14 +54,60 @@ class App extends React.Component {
         supportbar: { show: true },
         popup: {
           show: true,
-          mode: 'sent',
+          mode: 'sending',
         },
       },
     });
+
+    fetch('https://poludnev.com/api/button', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(formData),
+    })
+      .then(
+        (response) =>
+          new Promise((resolve) => {
+            setTimeout(() => {
+              resolve(response);
+            }, 2000);
+          }),
+      )
+      .then((response) => response.json())
+      .then((data) => {
+        if (data.message === 'fail') {
+        }
+        this.setState({
+          ...this.state,
+          uiState: {
+            ...this.state.uiState,
+            form: { show: false },
+            helpButton: { show: true },
+            supportbar: { show: true },
+            popup: {
+              show: true,
+              mode: data.message === 'fail' ? 'fail' : 'sent',
+            },
+          },
+        });
+      })
+      .catch((e) => {
+        this.setState({
+          ...this.state,
+          uiState: {
+            ...this.state.uiState,
+            form: { show: false },
+            helpButton: { show: true },
+            supportbar: { show: true },
+            popup: {
+              show: true,
+              mode: 'fail',
+            },
+          },
+        });
+      });
   };
 
   hidePopupHandler = () => {
-    console.log('popup hidden');
     this.setState({
       ...this.state,
       uiState: {

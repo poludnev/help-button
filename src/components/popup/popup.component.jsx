@@ -11,9 +11,11 @@ const Popup = (props) => {
 
   const displayScroll = popupUI.show ? 'block' : 'none';
 
-  const imgDisplay = popupUI.mode === 'sent' ? 'inline' : 'none';
+  const imgDisplay = popupUI.mode === 'support' ? 'none' : 'inline';
 
-  const popupClasses = classNames(`popup-${popupUI.mode} ugol5`);
+  const popupClasses = classNames(
+    `popup-${popupUI.mode === 'support' ? 'support' : 'feedback'} ugol5`,
+  );
 
   return (
     <div className='scroll' style={{ display: displayScroll }} onClick={hidePopup}>

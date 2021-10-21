@@ -24,7 +24,7 @@
   cursor: pointer;
 }
 
-.popup-sent {
+.popup-feedback {
   display: none;
   max-width: 590px;
   width: 85%;
@@ -39,15 +39,15 @@
   color: #2f2f2f;
 }
 
-.popup-sent img {
+.popup-feedback img {
   margin: 60px 0 30px 0;
 }
-.popup-sent .title {
+.popup-feedback .title {
   font-size: 34px;
   /* font-family: MUSEOSANSCYRL_900; */
   text-transform: uppercase;
 }
-.popup-sent .desc {
+.popup-feedback .desc {
   font-size: 23px;
   margin: 20px 0 60px 0;
   text-transform: uppercase;
